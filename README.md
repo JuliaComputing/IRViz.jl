@@ -26,7 +26,7 @@ foo (generic function with 1 method)
 julia> viz(@code_typed optimize=false foo())
 ```
 Would create the output:
-![Graph showing loop of blocks](tests/refs/loop.png)
+![Graph showing loop of blocks](test/refs/loop.png)
 
 ## See also:
  - [Cthulhu.jl](https://github.com/JuliaDebug/Cthulhu.jl)
