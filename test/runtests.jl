@@ -1,6 +1,11 @@
 using IRViz
+using InteractiveUtils
+using ReferenceTests
 using Test
 
-@testset "IRViz.jl" begin
-    # Write your tests here.
+
+for file in ("code-flow-graph.jl",)
+    @testset "$file" begin
+        include(file)
+    end
 end
