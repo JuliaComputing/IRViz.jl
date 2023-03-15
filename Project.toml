@@ -1,0 +1,13 @@
+name = "IRViz"
+uuid = "fe03f759-463e-4126-a68f-1df7fb7a8375"
+authors = ["Frames White <me@oxinabox.net> and contributors"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.6"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
