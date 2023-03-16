@@ -1,5 +1,7 @@
 module IRViz
+using Kroki
+export viz
 
-# Write your package code here.
+include("code-flow-graph.jl")
 
 end

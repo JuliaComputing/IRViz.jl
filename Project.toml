@@ -1,13 +1,23 @@
 name = "IRViz"
 uuid = "fe03f759-463e-4126-a68f-1df7fb7a8375"
-authors = ["Frames White <me@oxinabox.net> and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+Kroki = "b3565e16-c1f2-4fe9-b4ab-221c88942068"
+
 [compat]
+ImageIO = "0.6.6"
+Kroki = "0.2.0"
+ReferenceTests = "0.10.1"
+XTermColors = "0.2.1"
 julia = "1.6"
 
 [extras]
+ImageIO = "82e4d734-157c-48bb-816b-45c225c6df19"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+ReferenceTests = "324d217c-45ce-50fc-942e-d289b448e8cf"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+XTermColors = "c8c2cc18-de81-4e68-b407-38a3a0c0491f"
 
 [targets]
-test = ["Test"]
+test = ["ImageIO", "InteractiveUtils", "ReferenceTests", "Test", "XTermColors"]
