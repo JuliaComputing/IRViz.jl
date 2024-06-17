@@ -72,7 +72,7 @@ function ssa_use_graph(ir::IRCode)
         if stmt isa Expr
             for arg in stmt.args
                 if arg isa SSAValue
-                    @assert arg < stmt_ssa
+                    @assert arg.id < stmt_ssa.id
                     uses = get!(Vector{SSAValue}, used_in, arg)
                     push!(uses, stmt_ssa)
                 end
